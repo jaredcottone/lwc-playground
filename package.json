@@ -1,0 +1,38 @@
+{
+    "name": "lwc-playground",
+    "version": "0.0.1",
+    "author": "Jared Cottone",
+    "bugs": "https://github.com/Jared Cottone/lwc-playground/issues",
+    "dependencies": {
+        "@salesforce-ux/design-system": "^2.15.8",
+        "lightning-base-components": "^1.12.3-alpha",
+        "lwc-services": "^3.1.1"
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": ">=10.13.0",
+        "npm": ">=6.4.1",
+        "yarn": ">=1.9.4"
+    },
+    "homepage": "https://github.com/Jared Cottone/lwc-playground",
+    "keywords": [
+        "lwc"
+    ],
+    "license": "MIT",
+    "repository": "Jared Cottone/lwc-playground",
+    "scripts": {
+        "build": "lwc-services build -m production",
+        "build:development": "lwc-services build",
+        "lint": "eslint ./src/**/*.js",
+        "postinstall": "husky install",
+        "precommit": "npm run prettier:verify && [ $? -eq 0 ] && npm run lint",
+        "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "start": "node scripts/server.js",
+        "test:unit": "lwc-services test:unit",
+        "test:unit:coverage": "lwc-services test:unit --coverage",
+        "test:unit:debug": "lwc-services test:unit --debug",
+        "test:unit:watch": "lwc-services test:unit --watch",
+        "watch": "lwc-services watch"
+    }
+}

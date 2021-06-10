@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-card slds-m-around_large slds-p-around_large">
+        <lightning-dual-listbox
+            name="languages"
+            label="Select Languages"
+            source-label="Available"
+            selected-label="Selected"
+            field-level-help="Select your preferred languages"
+            options={options}
+            onchange={handleChange}
+        ></lightning-dual-listbox>
+    </div>
+
+    <div class="slds-box slds-m-around_large">
+        <p>Selected values are: {selected}</p>
+    </div>
+</template>
