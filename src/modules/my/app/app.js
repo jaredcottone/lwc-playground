@@ -1,16 +1,16 @@
-import { LightningElement } from 'lwc';
+import {LightningElement} from 'lwc';
 
 export default class App extends LightningElement {
     _selected = [];
 
     get options() {
         return [
-            { label: 'English', value: 'en' },
-            { label: 'German', value: 'de' },
-            { label: 'Spanish', value: 'es' },
-            { label: 'French', value: 'fr' },
-            { label: 'Italian', value: 'it' },
-            { label: 'Japanese', value: 'ja' }
+            {label: 'English', value: 'en'},
+            {label: 'German', value: 'de'},
+            {label: 'Spanish', value: 'es'},
+            {label: 'French', value: 'fr'},
+            {label: 'Italian', value: 'it'},
+            {label: 'Japanese', value: 'ja'}
         ];
     }
 
